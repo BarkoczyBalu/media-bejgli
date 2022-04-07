@@ -1,0 +1,10 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advice-block {
+    background-color: #F4FCD9;
+    border-radius: 15px;
+}

@@ -3,12 +3,19 @@
 }
 
 .comment-container h3, .comment-container p {
-    display: inline;
-    padding: 2rem;
+    display: inline-flex;
+    margin: 2rem;
+}
+
+.comment-container p {
+    background-color: #F4FCD9;
+    border-radius: 15px;
+    padding: 1rem;
 }
 
 img {
     display: inline;
+    border: 2px solid #534340;
     border-radius: 50%;
     max-width: 5rem;
 }

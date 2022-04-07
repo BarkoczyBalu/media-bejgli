@@ -1,4 +1,5 @@
-.product-card {
-    display: flex;
-    flex: auto;
+.card {
+    background-color: #F4FCD9;
+    border: none;
+    max-width: 14rem;
 }
