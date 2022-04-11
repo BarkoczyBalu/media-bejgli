@@ -1,33 +1,46 @@
 .comment-container {
-    margin: 3% auto;
+    margin: 5% auto;
 }
 
 .comment-container h3, .comment-container p {
     display: inline-flex;
-    margin: 2rem;
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 1rem;
 }
 
 .comment-container p {
-    background-color: #F4FCD9;
+    text-align: justify;
+    background-color: wheat;
     border-radius: 15px;
     padding: 1rem;
+    max-width: 700px;
 }
 
 img {
     display: inline;
     border: 2px solid #534340;
     border-radius: 50%;
-    max-width: 5rem;
+    max-width: 4rem;
+    position: relative;
+    bottom: 22px;
+    left: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 767px) {
+    
     img {
         display: none;
     }
 
     .comment-container h3, .comment-container p {
         display: block;
-        padding: 1rem;
         text-align: justify;
     }
+
+    .comment-container h3 {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
 }

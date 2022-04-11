@@ -2,5 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-content: flex-start; */
+    gap: 1rem;
 }
+
+.image-holder{
+    background-image: url("https://images2.alphacoders.com/716/thumb-1920-716078.jpg");
+    width: 100vw;
+    height: 300px;
+    margin-top: 2rem;
+    border-top: solid #534340 5px;
+    border-bottom: solid #534340 5px;
+    /* margin-bottom: 2rem; */
+}
+
+/* @media all and (min-width: 1750px) {
+    .container {
+        max-width: 1650px;
+    }
+} */

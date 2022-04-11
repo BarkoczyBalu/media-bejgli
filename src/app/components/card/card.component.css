@@ -1,5 +1,15 @@
 .card {
-    background-color: #F4FCD9;
+    /* background-color: #F4FCD9; */
+    background-color: wheat;
     border: none;
     max-width: 14rem;
+    min-height: 22rem;
+    cursor: pointer;
+}
+
+
+
+.card h4 {
+    border-bottom: #534340 solid 2px;
+    padding-bottom: 0.75rem;
 }

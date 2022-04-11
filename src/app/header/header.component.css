@@ -1,0 +1,23 @@
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    font-size: 2.1rem;
+    transition: 0.5s;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #BB9981;
+    
+    transition: 1s;
+}
+
+.active {
+    text-decoration: underline;
+}

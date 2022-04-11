@@ -1,24 +1,14 @@
 
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-lg-8 mb-3">
             <h1 class="text-center text-white m-5">JELENLEGI TERMÉKEINK</h1>
+            <hr>
         
-            <div class="product-container">
-                <!--FLEXBOX ALAPON ÉN ÍROM MEG-->
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
-                <app-card></app-card>
+            <div class="product-container" >
+                FLEXBOX
+                <app-card [pastry]="pastries[i]" *ngFor="let pastry of pastries; let i = index"></app-card>
             </div>
         </div>
         <div class="col-lg-4 mt-5 mb-4">
@@ -31,5 +21,32 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus doloremque blanditiis atque aliquam natus similique aliquid quo a tempore, impedit maiores dolorem deserunt? Dolore numquam recusandae esse facere reiciendis.</p>
             </aside>  
         </div>
+    </div>
+</div> -->
+
+<div class="grid-container">
+    <div class="current-products mb-3">
+        <h1 class="text-center text-white m-5">JELENLEGI TERMÉKEINK</h1>
+        <hr>
+    
+        <div class="product-container" >
+            <!--FLEXBOX-->
+            <app-card [pastry]="pastries[i]" *ngFor="let pastry of pastries; let i = index" (click)="onSelect(pastries[i])"></app-card>
+        </div>
+    </div>
+    <div class="advice-aside mt-5 mb-4">
+        <aside class="advice-block p-3">
+            <h3 class="pb-3">Rólunk</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus doloremque blanditiis atque aliquam natus similique aliquid quo a tempore, impedit maiores dolorem deserunt? Dolore numquam recusandae esse facere reiciendis.</p>
+        </aside>
+        <aside class="details-block text-center p-3 mt-2 mb-2" id="details-block">
+            <img [src]="selectedItem?.imgUrl" alt="">
+            <h3 class="pb-3 pt-3" [ngClass]="{'details-separator': selectedItem.title}">{{selectedItem?.title || "Válaszd ki egy termékünket!"}}</h3>
+            <p>{{selectedItem?.details}}</p>
+        </aside>
+        <aside class="advice-block p-3">
+            <h3 class="pb-3">Teszünk a környezetünkért</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus doloremque blanditiis atque aliquam natus similique aliquid quo a tempore, impedit maiores dolorem deserunt? Dolore numquam recusandae esse facere reiciendis.</p>
+        </aside>
     </div>
 </div>
