@@ -3,13 +3,16 @@
     background-color: wheat;
     border: none;
     max-width: 14rem;
-    min-height: 22rem;
-    cursor: pointer;
+    min-height: 24rem;
+}
+
+.img-body {
+    height: 9.5rem;
+    overflow: hidden;
 }
 
 
-
-.card h4 {
+.card-title {
     border-bottom: #534340 solid 2px;
     padding-bottom: 0.75rem;
 }

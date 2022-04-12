@@ -1,5 +1,7 @@
-<div class="comment-container">
-        <img [src]="comment.imgUrl" alt="Egy véletlenszerű medve">
-        <h3 class="text-white">{{comment.user}}</h3>
+<div class="comment-container text-start">
+        <div class="user">
+                <img [src]="comment.imgUrl" alt="Egy véletlenszerű medve">
+                <h3 class="text-white">{{comment.user}}</h3>
+        </div>
         <p>{{comment.text}}</p>
 </div>

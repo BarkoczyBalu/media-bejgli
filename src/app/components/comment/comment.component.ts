@@ -16,7 +16,7 @@ export class CommentComponent implements OnInit {
     id:1,
     user: "Kiss Dániel",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam qui illo nobis doloremque porro id modi blanditiis quis nisi eaque.",
-    imgUrl: "https://placebear.com/150/150",
+    imgUrl: "https://randomuser.me/api/?gender=female",
   }
   
   constructor() { }

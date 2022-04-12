@@ -4,7 +4,6 @@
     "p p . a"
     "p p . a"
     "p p . a";
-    /* gap: 1rem; */
 }
 
 .current-products {
@@ -24,13 +23,44 @@
     gap: 1rem;
 }
 
+app-card {
+    cursor: pointer;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 20vw;
+    border-radius: 50%;
+}
+
 .advice-block, .details-block {
     background-color: wheat;
     border-radius: 15px;
 }
 
+.advice-block {
+    max-width: 30rem;
+    margin: auto;
+}
+
+.advice-block h3 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.advice-block p {
+    text-align: justify;
+}
+
+.advice-block img {
+    min-width: 150px;
+}
+
 .details-block {
-    padding: 0 0 2rem 0 !important;
+    padding: 0 0 1rem 0 !important;
     max-width: 550px;
     margin: auto;
 }
@@ -41,19 +71,9 @@
     width: 100%;
 }
 
-/* .details-block h3 {
-    border-bottom: 2px dashed #534340;
-} */
-
 .details-separator {
     border-bottom: 2px dashed #534340;
 }
-
-/* @media all and (min-width: 1750px) {
-    .container {
-        max-width: 1650px;
-    }
-} */
 
 @media all and (max-width: 991px) {
     .grid-container {

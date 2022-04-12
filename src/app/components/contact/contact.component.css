@@ -1,0 +1,19 @@
+thead {
+    border-bottom: 2px solid #534043;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.container div {
+    background-color: wheat;
+    border-radius: 15px;
+}
+
+@media all and (max-width: 767px) {
+    .container div {
+        width: 100%;
+    }
+    
+}

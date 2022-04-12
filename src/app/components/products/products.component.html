@@ -24,6 +24,7 @@
     </div>
 </div> -->
 
+<!-- CSS-GRID -->
 <div class="grid-container">
     <div class="current-products mb-3">
         <h1 class="text-center text-white m-5">JELENLEGI TERMÉKEINK</h1>
@@ -36,17 +37,34 @@
     </div>
     <div class="advice-aside mt-5 mb-4">
         <aside class="advice-block p-3">
+            <div class="image-container">
+                <img src="\assets\products\about-us.jpg" alt="Csapatmunka egy pékségben">
+            </div>
             <h3 class="pb-3">Rólunk</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus doloremque blanditiis atque aliquam natus similique aliquid quo a tempore, impedit maiores dolorem deserunt? Dolore numquam recusandae esse facere reiciendis.</p>
+            <hr>
+            <p>2022 óta foglalkozunk péksüteményekkel, így az ez idő alatt felhalmozott tapasztalatot és a terület iránti szeretetünket mind "belesütjük" a süteményeinkbe. Számunkra nagyon fontos, hogy a kollégák ne csak hozzáértőek, de barátságosak is legyenek, így a süteményeink elfogyasztásakor a jókedv garantált!</p>
         </aside>
-        <aside class="details-block text-center p-3 mt-2 mb-2" id="details-block">
+        <aside class="details-block text-center p-3 mt-3 mb-3" id="details-block">
             <img [src]="selectedItem?.imgUrl" alt="">
             <h3 class="pb-3 pt-3" [ngClass]="{'details-separator': selectedItem.title}">{{selectedItem?.title || "Válaszd ki egy termékünket!"}}</h3>
             <p>{{selectedItem?.details}}</p>
+            <div class="m-auto" *ngIf="selectedItem.info">
+                <ul class="text-start" >
+                    <li>Energia: {{selectedItem?.info.calorie}}</li>
+                    <li>Zsír: {{selectedItem?.info.fat}}</li>
+                    <li>Szénhidrát: {{selectedItem?.info.carbohydrate}}</li>
+                    <li>Fehérje: {{selectedItem?.info.protein}}</li>
+                    <li>Só: {{selectedItem?.info.salt}}</li>
+                </ul>
+            </div>
         </aside>
         <aside class="advice-block p-3">
+            <div class="image-container">
+                <img src="\assets\products\save-the-earth.jpg" alt="Egy szív alakú moha">
+            </div>
             <h3 class="pb-3">Teszünk a környezetünkért</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus doloremque blanditiis atque aliquam natus similique aliquid quo a tempore, impedit maiores dolorem deserunt? Dolore numquam recusandae esse facere reiciendis.</p>
+            <hr>
+            <p>Pékségeink amellett, hogy finom ételeket készítenek, tesznek a környezetvédelemért is. Az első pékségek között vagyunk, akik az elkészített árúk eladásához nem használnak fel semmilyen műanyag alapú csomagolópapírt és buzdítjuk vásárlóinkat, hogy hozzanak saját dobozt, amiben elvihetik kedvenc kenyerüket/süteményüket.</p>
         </aside>
     </div>
 </div>
