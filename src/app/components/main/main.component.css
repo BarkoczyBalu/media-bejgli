@@ -7,7 +7,8 @@
 
 .image-holder{
     background-image: url("https://images2.alphacoders.com/716/thumb-1920-716078.jpg");
-    width: 100vw;
+    background-attachment: fixed;
+    width: auto;
     height: 300px;
     margin-top: 2rem;
     border-top: solid #534340 5px;
