@@ -4,7 +4,7 @@
 }
 
 .comment-container h3 {
-    display: inline-flex;
+    display: inline;
     margin: 0.5rem;
     margin-top: 0;
     padding: 1rem;
@@ -36,11 +36,6 @@ img {
         display: none;
     }
 
-    .comment-container h3, .comment-container p {
-        display: block;
-        text-align: justify;
-    }
-
     .comment-container h3 {
         padding-left: 0;
         padding-bottom: 0;
@@ -53,3 +48,4 @@ img {
         max-width: 100%;
     }
 }
+

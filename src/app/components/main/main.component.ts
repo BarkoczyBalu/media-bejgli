@@ -38,13 +38,13 @@ export class MainComponent implements OnInit {
     {
       id: 1,
       user: "Kiss Dániel",
-      text: '"Nagyon kedeves volt a kiszolgálás. Máskor is jövök ide!"',
+      text: '"Nagyon kedves volt a kiszolgálás. Máskor is jövök ide!"',
       imgUrl: "/assets/users/user1.jpg",
     },
     {
       id: 2,
       user: "Kecskés Pál",
-      text: '"Egy nagyon barátságos környezet és a legjobb ízek társulása egy helyen. Ha van lehetősége az embernek kipróbálni, semmi képp se hagyja ki!"',
+      text: '"Egy nagyon barátságos környezet és a legjobb ízek társulása egy helyen. Ha van lehetősége az embernek kipróbálni, semmiképp se hagyja ki!"',
       imgUrl: "/assets/users/user2.jpg",
     },
     {
